@@ -1,6 +1,6 @@
 # Coding conventions
 
-## Core
+## C
 
 * One tab to indent
 * Opening brackets are always put directly next to the thing preceding them
@@ -23,4 +23,21 @@ int function(int a, bool secondarg){
 	}
 	return a;
 }
+```
+
+## Lua
+* One tab to indent
+* No extra spaces on the insides of rounded brackets (function arguments, etc.) but a space between every function argument
+* Spaces between operators and their arguments
+
+Here's some valid code:
+```lua
+function example(a, b)
+	if a > b then
+		print(a)
+	else
+		print(b)
+	end
+	return a + b
+end
 ```
